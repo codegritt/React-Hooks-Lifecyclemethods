@@ -1,23 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ClassCompLife from "./components/ClassCompLife";
+import ClassCompLife2 from "./components/ClassCompLife2";
+import CustomHook from "./components/CustomHook";
+import ObjectUseState from "./components/ObjectUseState";
+import UseCallbackhook from "./components/UseCallbackhook";
+import UseContextHook from "./components/UseContextHook";
+import UseEffectHook from "./components/UseEffectHook";
+import UseLayoutEffect from "./components/UseLayoutEffect";
+import UseMemohook2 from "./components/UseMemohook2";
+import UseReducerHook from "./components/UseReducerHook";
+import UseRefHook from "./components/UseRefHook";
+import UseStateHook from "./components/UseStateHook";
+import React, { createContext } from "react";
+import GetDerived from "./components/GetDerived";
+import ShouldUpdate from "./components/ShouldUpdate";
+import GetSnapshot from "./components/GetSnapshot";
+
+export const LoginContext = createContext();
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UseStateHook />
+      <ObjectUseState />
+      <UseEffectHook />
+
+      <LoginContext.Provider value={true}>
+        <div>
+          <UseContextHook />
+        </div>
+      </LoginContext.Provider>
+      <UseRefHook />
+      <UseReducerHook />
+      <UseLayoutEffect />
+      <UseMemohook2 />
+      <UseCallbackhook />
+      <CustomHook />
+      <ClassCompLife />
+      <ClassCompLife2 />
+      <GetDerived />
+      <ShouldUpdate />
+      <GetSnapshot />
     </div>
   );
 }
