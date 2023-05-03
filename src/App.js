@@ -15,6 +15,9 @@ import React, { createContext } from "react";
 import GetDerived from "./components/GetDerived";
 import ShouldUpdate from "./components/ShouldUpdate";
 import GetSnapshot from "./components/GetSnapshot";
+import GetError from "./components/GetError";
+import DidCatch from "./components/DidCatch";
+import { Counter } from "./components/Redux/Reducer/counter";
 
 export const LoginContext = createContext();
 
@@ -41,6 +44,9 @@ function App() {
       <GetDerived />
       <ShouldUpdate />
       <GetSnapshot />
+      <GetError />
+      <DidCatch />
+      <Counter />
     </div>
   );
 }

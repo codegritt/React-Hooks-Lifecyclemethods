@@ -41,6 +41,7 @@ export class GetSnapshot extends Component {
         <div>
           <div id="prev"></div>
           <div id="new"></div>
+          <hr></hr>
         </div>
       </>
     );
