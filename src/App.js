@@ -18,6 +18,7 @@ import GetSnapshot from "./components/GetSnapshot";
 import GetError from "./components/GetError";
 import DidCatch from "./components/DidCatch";
 import { Counter } from "./components/Redux/Reducer/counter";
+import Code1 from "./components/Code1";
 
 export const LoginContext = createContext();
 
@@ -47,6 +48,7 @@ function App() {
       <GetError />
       <DidCatch />
       <Counter />
+      <Code1 />
     </div>
   );
 }
