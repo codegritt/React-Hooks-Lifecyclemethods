@@ -20,6 +20,9 @@ import DidCatch from "./components/DidCatch";
 import { Counter } from "./components/Redux/Reducer/counter";
 import FetchDataAPI from "./components/FetchDataAPI";
 import AxiosLib from "./components/AxiosLib";
+import DidMount from "./components/DidMount";
+import Reactquery from "./components/reactquery";
+import SwrComp from "./components/SwrComp";
 
 export const LoginContext = createContext();
 
@@ -51,6 +54,10 @@ function App() {
       <Counter />
       <FetchDataAPI />
       <AxiosLib />
+      <DidMount />
+
+      <SwrComp />
+      <Reactquery />
     </div>
   );
 }

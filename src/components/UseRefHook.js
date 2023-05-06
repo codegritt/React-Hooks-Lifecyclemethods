@@ -20,7 +20,7 @@ const UseRefHook = () => {
       <div>
         <h3>UseRef hook</h3>
         <span>
-          Goal is to create mutable elements do that it doesn't re-renders
+          Goal is to create mutable elements so that it doesn't re-renders
         </span>
         <br></br>
         <input type="text" onChange={(e) => setName(e.target.value)} />
